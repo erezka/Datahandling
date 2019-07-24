@@ -7,8 +7,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class Task1_1 {
-    public static void main(String[] args) {
-        String myBirthday = "29.06.1990";
+    public static void MyBirthdayDiffNow(String myBirthday) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         LocalDate myBday = LocalDate.parse(myBirthday, formatter);
         LocalDateTime Bday = LocalDateTime.of(myBday, LocalTime.of(4, 30, 33, 0));
