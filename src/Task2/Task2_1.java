@@ -1,9 +1,11 @@
 package Task2;
 
+import java.math.BigDecimal;
+
 public class Task2_1 {
-    public static String AreaOfSircle (int radius) {
+    public static BigDecimal AreaOfSircle (int radius) {
         double S = Math.PI * (radius *radius);
-        String result = String.format("%.50f",S);
+        BigDecimal result = new BigDecimal(S).setScale(50);
         return result;
     }
 }
