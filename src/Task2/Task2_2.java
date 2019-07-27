@@ -5,6 +5,7 @@ public class Task2_2 {
         double a = Double.parseDouble(str1);
         double b = Double.parseDouble(str2);
         double c = Double.parseDouble(str3);
-        return a + b == c;
+        double epsilon = 0.0000001d;
+        return ((a+b)-c)<epsilon;
     }
 }
